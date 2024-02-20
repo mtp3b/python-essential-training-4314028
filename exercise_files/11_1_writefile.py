@@ -6,9 +6,9 @@ parser.add_argument('--output', '-o', required=True, help='The destination file 
 parser.add_argument('--text', '-t', required=True, help='The text to write to the file')
 
 
-args = parser.parse_args()
+arguments = parser.parse_args()
 
-with open(args.output, 'w') as f:
-    f.write(args.text+'\n')
+with open(arguments.output, 'w') as f:
+    f.write(arguments.text+'\n')
 
-print(f'Wrote "{args.text}" to file "{args.output}"')
+print(f'Wrote "{arguments.text}" to file "{arguments.output}"')
